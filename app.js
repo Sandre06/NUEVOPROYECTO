@@ -3,7 +3,7 @@ import mongoose from "mongoose";//conecta la base de datos
 import express from "express";//crea el servidor
 import dotenv from "dotenv";//variablse de entorno del archivo .env
 import cors from "cors";//seguridad
-
+import { test } from "./backend/controllers/alumnos.controller.js";
 dotenv.config();//Acceder a la configuracion de dotenv
 
 //conectar una db
@@ -21,3 +21,4 @@ app.listen(4000, ()=>{
     console.log("Se escucha el servidor")
 })// verificando funcionalidad del servidor
 
+test();
